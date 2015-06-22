@@ -1,5 +1,5 @@
 class zabbixserver::install (
-    $mysqlpassword      = $zabbixserver::params::mysql_password,
+    $mysqlpassword      = $zabbixserver::params::mysqlpassword_root,
   ) inherits zabbixserver::params
 {
   # notify {"zabbixserver::install $mysqlpassword": }
